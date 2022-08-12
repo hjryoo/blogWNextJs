@@ -1,0 +1,13 @@
+---
+title: Linux - Too many open files
+date: 2022-08-12
+description: About Too many open files Error
+---
+
+## About Linux - Too many open files Errir
+
+- Linux 에는 하나의 프로세스가 접근 가능한 파일(리소스) 개수가 정해져 있어서,
+	해당 개수가 넘어가면 발생하는 에러
+- 기본값은 1024, 4096
+- /etc/security/limits.comf 개수 수정 가능하나, system 전체 limit이 따로 정해져 있음
+- /proc/sys/fs/file-max 에서 system 전체 limit 확인 가능
